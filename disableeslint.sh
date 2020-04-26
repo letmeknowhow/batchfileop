@@ -28,6 +28,22 @@ function scandir() {
                 /* eslint-disable */
                 ' $filename
  			fi
+            # 根据创建时间
+            # local filename=$dirlist
+        	# if [[ ${filename:(-${#2})} = $2 ]]
+        	# then
+            #     file=${cur_dir}/${filename}
+            #     createtime=`stat -f %SB $file`
+            #     t1=`date -d "$createtime" +%s`
+            #     t2=`date -d "$3" +%s`
+            #     if [ $t2 -gt $t1 ]
+            #     then
+        	# 	    echo "修改文件："${cur_dir}"/"$filename
+            #         sed -i '' '1i\
+            #         /* eslint-disable */
+            #         ' $filename
+            #     fi
+ 			# fi
         fi
     done
 }
